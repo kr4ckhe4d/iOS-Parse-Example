@@ -52,10 +52,10 @@
     [query findObjectsInBackgroundWithBlock:^(NSArray * _Nullable objects, NSError * _Nullable error) {
         if (!error) {
             // The find succeeded.
-            NSLog(@"Successfully retrieved %lu scores.",(unsigned long)objects.count);
+            NSLog(@"Successfully retrieved %lu records.",(unsigned long)objects.count);
             // Do something with the found objects
             for (PFObject *object in objects) {
-                NSLog(@"%@", [object objectForKey:@"School"]);
+                NSLog(@"%@", object);
             }
         } else {
             // Log details of the failure
@@ -71,9 +71,10 @@
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         if (!error) {
             // The find succeeded.
-            NSLog(@"Successfully retrieved %lu scores.",(unsigned long)objects.count);
+            NSLog(@"Successfully retrieved %lu records.",(unsigned long)objects.count);
             // Do something with the found objects
             for (PFObject *object in objects) {
+                NSLog(@"%@", [object objectForKey:@"Name"]);
                 NSLog(@"%@", [object objectForKey:@"School"]);
             }
         } else {
@@ -81,7 +82,7 @@
             NSLog(@"Error: %@ %@", error, [error userInfo]);
         }
     }];
-
+    
 }
 
 @end

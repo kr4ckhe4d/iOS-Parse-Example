@@ -68,6 +68,7 @@ int const PFSQLiteDatabaseDatabaseAlreadyClosed = 4;
 
     _databaseClosedTaskCompletionSource = [[BFTaskCompletionSource alloc] init];
     _databasePath = [path copy];
+    NSLog(@"databasePath %@",_databasePath);
 
     dispatch_queue_t queue = PFThreadsafetyCreateQueueForObject(self);
     _databaseQueue = queue;

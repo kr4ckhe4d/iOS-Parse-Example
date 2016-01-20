@@ -131,6 +131,7 @@ static NSString *const _ParseApplicationIdFileName = @"applicationId";
     dispatch_barrier_sync(_offlineStoreAccessQueue, ^{
         PFConsistencyAssert(!_offlineStore, @"Can't load offline store more than once.");
         _offlineStore = [[PFOfflineStore alloc] initWithFileManager:self.fileManager options:options];
+        
     });
 }
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C0DE4241C4F7BCD0020EDC0 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C0DE4231C4F7BCD0020EDC0 /* LoginViewController.m */; };
 		7CD20E941C4CD90A00779613 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD20E931C4CD90A00779613 /* main.m */; };
 		7CD20E971C4CD90A00779613 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD20E961C4CD90A00779613 /* AppDelegate.m */; };
 		7CD20E9A1C4CD90A00779613 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD20E991C4CD90A00779613 /* ViewController.m */; };
@@ -14,11 +15,14 @@
 		7CD20EA01C4CD90A00779613 /* Test_Parse.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7CD20E9E1C4CD90A00779613 /* Test_Parse.xcdatamodeld */; };
 		7CD20EA21C4CD90A00779613 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CD20EA11C4CD90A00779613 /* Assets.xcassets */; };
 		7CD20EA51C4CD90A00779613 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CD20EA31C4CD90A00779613 /* LaunchScreen.storyboard */; };
+		7CEE99ED1C4DF120008E273A /* FBLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CEE99EC1C4DF120008E273A /* FBLoginViewController.m */; };
 		B1F2597F955752C859189866 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CCF60B3F06C43ACC6C958AC /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5CCF60B3F06C43ACC6C958AC /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C0DE4221C4F7BCD0020EDC0 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		7C0DE4231C4F7BCD0020EDC0 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		7CD20E8F1C4CD90A00779613 /* Test Parse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Test Parse.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CD20E931C4CD90A00779613 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7CD20E951C4CD90A00779613 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -30,6 +34,8 @@
 		7CD20EA11C4CD90A00779613 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7CD20EA41C4CD90A00779613 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7CD20EA61C4CD90A00779613 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CEE99EB1C4DF120008E273A /* FBLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBLoginViewController.h; sourceTree = "<group>"; };
+		7CEE99EC1C4DF120008E273A /* FBLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBLoginViewController.m; sourceTree = "<group>"; };
 		C2091D4FE67718752246CED7 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		CD27F0C15EBC238A1D551A94 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -79,6 +85,10 @@
 				7CD20E961C4CD90A00779613 /* AppDelegate.m */,
 				7CD20E981C4CD90A00779613 /* ViewController.h */,
 				7CD20E991C4CD90A00779613 /* ViewController.m */,
+				7CEE99EB1C4DF120008E273A /* FBLoginViewController.h */,
+				7CEE99EC1C4DF120008E273A /* FBLoginViewController.m */,
+				7C0DE4221C4F7BCD0020EDC0 /* LoginViewController.h */,
+				7C0DE4231C4F7BCD0020EDC0 /* LoginViewController.m */,
 				7CD20E9B1C4CD90A00779613 /* Main.storyboard */,
 				7CD20EA11C4CD90A00779613 /* Assets.xcassets */,
 				7CD20EA31C4CD90A00779613 /* LaunchScreen.storyboard */,
@@ -229,8 +239,10 @@
 			files = (
 				7CD20E9A1C4CD90A00779613 /* ViewController.m in Sources */,
 				7CD20EA01C4CD90A00779613 /* Test_Parse.xcdatamodeld in Sources */,
+				7C0DE4241C4F7BCD0020EDC0 /* LoginViewController.m in Sources */,
 				7CD20E971C4CD90A00779613 /* AppDelegate.m in Sources */,
 				7CD20E941C4CD90A00779613 /* main.m in Sources */,
+				7CEE99ED1C4DF120008E273A /* FBLoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,9 +353,11 @@
 			baseConfigurationReference = CD27F0C15EBC238A1D551A94 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Pods",
 				);
 				INFOPLIST_FILE = "Test Parse/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -357,9 +371,11 @@
 			baseConfigurationReference = C2091D4FE67718752246CED7 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Pods",
 				);
 				INFOPLIST_FILE = "Test Parse/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

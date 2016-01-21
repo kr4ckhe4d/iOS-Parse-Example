@@ -11,6 +11,7 @@
 			</array>
 		</dict>
 	</array>
+    
 	<key>FacebookAppID</key>
 	<string>537169466445708</string>
 	<key>FacebookDisplayName</key>
@@ -44,6 +45,7 @@
 			</dict>
 		</dict>
 	</dict>
+    
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>fbapi</string>
@@ -60,6 +62,7 @@
 		<string>fbauth2</string>
 		<string>fb-messenger-api20140430</string>
 	</array>
+    
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>

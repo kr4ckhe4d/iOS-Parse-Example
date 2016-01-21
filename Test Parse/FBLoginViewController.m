@@ -54,16 +54,17 @@
 
 
 - (IBAction)btnClick:(id)sender {
-    NSArray *permissions = @[@"public_profile"];
+    NSArray *permissions = @[];
     [PFFacebookUtils logInInBackgroundWithReadPermissions:permissions block:^(PFUser *user, NSError *error) {
         if (!user) {
-            NSLog(@"Uh oh. The user cancelled the Facebook login.");
+            NSLog(@"Uh oh. The user cancelled the Facebook login. %@",error);
         } else if (user.isNew) {
             NSLog(@"User signed up and logged in through Facebook!");
         } else {
             NSLog(@"User logged in through Facebook!");
         }
     }];
+    
 }
 
 /*
